@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Barlow", sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1000px];
+  }
+}
+
+.burger {
+  width: 33px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  top: 15px
+}
+
+.burger-line {
+  width: 33px;
+  height: 4px;
+  background-color: #000;
+  display: flex;
+  transition: 0.3s all ease-out;
+}
+
+.top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.middle-line {
+  top: 40%;
+  left: 0;
+  position: absolute;
+}
+
+.bottom-line {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.burger.active > .top-line {
+    transform: translateY(8px) rotate(45deg);
+    background-color: #828282;
+    transition: 0.3s all ease;
+}
+
+.burger.active > .middle-line{
+    opacity: 0;
+    transition: 0.2s all ease;
+}
+
+.burger.active > .bottom-line{
+    background-color: #828282;
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s all ease;
+}

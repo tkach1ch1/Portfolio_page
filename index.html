@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="relative">   
+        <div class="container">
+            <nav>
+                <ul class="flex justify-between items-center py-8 text-lg font-bold border-b-[1px] md:hidden">
+                    <li><a href="#" class="hover:text-slate-300">Home</a></li>
+                    <li><a href="#" class="text-[#828282] hover:text-slate-300">About me</a></li>
+                    <li><a href="#" class="text-[#828282] hover:text-slate-300">Skills</a></li>
+                    <li><a href="#" class="text-[#828282] hover:text-slate-300">Portfolio</a></li>
+                    <li><a href="#" class="text-[#828282] hover:text-slate-300">Contacts</a></li>
+                </ul>
+
+                <!-- Burger menu -->
+                <button class="burger hidden md:block  z-[1]">
+                    <span class="burger-line top-line"></span>
+                    <span class="burger-line middle-line"></span>
+                    <span class="burger-line bottom-line"></span>
+                </button>
+
+                <ul id="menu" class="hidden absolute left-3 flex-col  right-3 bg-white ">
+                    <li class="block pb-6 font-bold md:text-[28px] sm:text-[34px]"><a href="#"></a>Home</li>
+                    <li class="block py-6 font-bold  text-lightGray hover:text-slate-300 md:text-[28px] sm:text-[34px]"><a href="#" ></a>About me</li>
+                    <li class="block py-6 font-bold  text-lightGray hover:text-slate-300 md:text-[28px] sm:text-[34px]"><a href="#" ></a>Skills</li>
+                    <li class="block py-6 font-bold  text-lightGray hover:text-slate-300 md:text-[28px] sm:text-[34px]"><a href="#" ></a>Portfolio</li>
+                    <li class="block pt-6 pb-16 font-bold  text-lightGray hover:text-slate-300 md:text-[28px] sm:text-[34px]"><a href="#" ></a>Contacts</li>
+                    <li class="absolute bottom-14 right-0  rotate-90 w-fit font-bold p-5 md:text-[28px] sm:text-[25px]"><a href="#"><span class="text-lightGray">RU </span><span>| ENG</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="mt-10 mb-28">
+                    <div class="flex justify-between items-end  md:flex-col md:items-start md:mt-16">
+                        <h2 class="text-5xl font-bold w-32 ">Denis
+                        Novik</h2>
+                        <span class="text-lg font-medium w-40 md:mt-6 ">UX | UI designer
+                        24 years old, Minsk</span>
+                        <a href="#" class="font-bold text-lg -rotate-90 pt-3 origin-top md:hidden "><span class="text-lightGray hover:text-black">RU </span><span class="hover:text-lightGray">| ENG</span></a>
+                    </div>
+
+                    <picture>
+                        <source srcset="./img/foto2.png" media="(max-width: 480px)" class="max-h-[478px]">
+                        <img src="./img/BSPP2266.png" alt="Profile" class="mt-12 w-full">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="bg-[#F6F6F6]">
+            <div class="container">
+                <div class=" pt-[120px] pb-[107px] text-center max-w-[460px] mx-auto ">
+                    <h3 class="pb-5 font-bold text-4xl">About me</h3>
+                    <div class="text-lg">
+                        <p class="pb-5 ">Hi, I'm Denis – UX/UI designer from Minsk. 
+                            I'm interested in design and everything connected with it.</p>
+                        <p class="pb-5">I'm studying at courses "Web and mobile design 
+                            interfaces" in IT-Academy.</p>
+                        <p class="pb-5">Ready to implement excellent projects
+                            with wonderful people.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skils">
+            <div class="container">
+                <div class="mt-24 mx-auto text-center">
+                    <h3 class="text-4xl font-bold pb-[70px]">Skills</h3>
+                    <span class="text-xl">I work in such programs as</span>
+                    <div class="flex justify-between mt-20 mb-24 md:flex-col md:max-w-full md:items-center">
+                            <img src="./img/ps.svg" alt="ph" class="md:mb-20">
+                          
+                            <img src="./img/ai.svg" alt="ph" class="md:mb-20">
+                           
+                            <img src="./img/ae.svg" alt="ph" class="md:mb-20">
+                         
+                            <img src="./img/figma.svg" alt="ph">  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="porfolio" class="bg-[#F6F6F6]">
+            <div class="container">
+                <div class="mx-auto text-center">
+                    <h4 class="pt-28 pb-12 text-4xl font-bold">Portfolio</h4>
+                    <fieldset>
+                        <img src="./img/women.jpg" alt="women" class="mb-11 md:mb-8">   
+                        <figcaption class="mb-24 text-lg font-bold underline underline-offset-4 sm:text-base">Online fashion store - Homepage</figcaption>
+                    </fieldset>
+                    <fieldset>
+                        <img src="./img/reebok.png" alt="reebok" class="mb-11 md:mb-8">
+                        <figcaption class="mb-24 text-lg font-bold underline underline-offset-4 sm:text-base">Reebok Store - Concept</figcaption>
+                    </fieldset>
+                    <fieldset>
+                        <img src="./img/braun.png" alt="braun" class="mb-11 md:mb-8">
+                        <figcaption class="mb-24 text-lg font-bold underline underline-offset-4 sm:text-base">Braun Landing Page - Concept</figcaption>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="container">
+                <div class="mx-auto text-center max-w-[280px]">
+                    <h4 class="text-4xl font-bold pt-28">Contacts</h4>
+                    <p class="text-xl pt-5 mb-7">Want to know more or just chat? 
+                        You are welcome!</p>
+                    <a href="#" class="mx-auto py-3 px-7 bg-black text-white text-lg font-bold rounded-3xl max-w-[180px]">Send message</a>
+                    <img src="./img/Group 12.png" alt="group" class="mt-20 mb-11 ">
+                    <p class="mb-32 text-base ">Like me on
+                        LinkedIn, Instagram, Behance, Dribble</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/scrypt.js"></script>
+</body>
+</html>
